@@ -1,3 +1,159 @@
-site_name: "Dimex - Docs"
-repo_url:""
-site_url:
+site_name: DIMEX
+repo_url: https://github.com/KpnWorld/dimex
+site_description: Data. Intelligence. Market. Execution. Edge.
+site_author: KpnWorld
+copyright: Copyright KpnWorld ( 2026 - present )
+site_url: https://kpnworld.github.io/dimex/
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: "material"
+  language: en
+  custom_dir: docs/overrides
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  font:
+    text: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.sections
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+    - toc.integrate
+    - navigation.footer
+    - search.suggest
+    - search.share
+  palette:
+    - scheme: slate
+      primary: black
+      accent: light-green
+      toggle:
+        icon: material/weather-night
+        name: Dark Mode
+    - scheme: default
+      primary: black
+      accent: light-green
+      toggle:
+        icon: material/weather-sunny
+        name: Light Mode
+plugins:
+  - glightbox:
+      auto_caption: true
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - social:
+      cards_layout_options:
+        background_color: "#000000"
+        color: "#39FF14"
+  - minify:
+      minify_html: true
+nav:
+  - Home: index.md
+  - Brand:
+    - brand/index.md
+    - Identity: brand/identity.md
+    - Voice: brand/voice.md
+    - Colors: brand/colors.md
+    - Naming: brand/naming.md
+  - Architecture:
+    - architecture/index.md
+    - Overview: architecture/overview.md
+    - API Structure: architecture/api_structure.md
+    - Database: architecture/database.md
+    - Engine: architecture/engine.md
+    - Brokers: architecture/brokers.md
+    - Deployment: architecture/deployment.md
+  - Security:
+    - security/index.md
+    - Overview: security/overview.md
+    - Encryption: security/encryption.md
+    - Permissions: security/permissions.md
+    - Audit: security/audit.md
+    - Compliance: security/compliance.md
+  - Trader Guide:
+    - trader/index.md
+    - Getting Started: trader/getting_started.md
+    - Connecting Exchanges: trader/connecting_exchanges.md
+    - AI Providers: trader/ai_providers.md
+    - Signals: trader/signals.md
+    - Strategies: trader/strategies.md
+    - Automation: trader/automation.md
+    - Risk Management: trader/risk_management.md
+    - Portfolio: trader/portfolio.md
+    - Alerts: trader/alerts.md
+    - Paper Trading: trader/paper_trading.md
+  - API Reference:
+    - api/index.md
+    - Overview: api/overview.md
+    - Auth: api/auth.md
+    - Wallet: api/wallet.md
+    - Market: api/market.md
+    - Engine: api/engine.md
+    - Trades: api/trades.md
+    - Stats: api/stats.md
+    - Alerts: api/alerts.md
+    - Keys: api/keys.md
+  - Developer Guide:
+    - developer/index.md
+    - Quickstart: developer/quickstart.md
+    - Authentication: developer/authentication.md
+    - WebSockets: developer/websockets.md
+    - Building a Bot: developer/building_a_bot.md
+    - Building a Dashboard: developer/building_a_dashboard.md
+    - Rate Limits: developer/rate_limits.md
+    - Error Handling: developer/error_handling.md
+    - SDK: developer/sdk.md
+  - Changelog:
+    - changelog/index.md
+    - v0.1.0: changelog/v0.1.0.md
+markdown_extensions:
+  - tables
+  - footnotes
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: ⚓︎
+  - pymdownx.highlight:
+      line_spans: __span
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+extra:
+  version: 0.1.0
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/KpnWorld/dimex
+  analytics:
+    provider: google
+    property: YOUR_GA_PROPERTY
