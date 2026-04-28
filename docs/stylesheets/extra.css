@@ -1,0 +1,43 @@
+/* docs/stylesheets/extra.css */
+
+:root {
+  --dimex-black:      #000000;
+  --dimex-green:      #39FF14;
+  --dimex-green-dim:  #1a7a0a;
+  --dimex-grey:       #1a1a1a;
+  --dimex-white:      #f0f0f0;
+}
+
+/* terminal cursor on headers */
+h1::after, h2::after {
+  content: "_";
+  color: var(--dimex-green);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* neon green links */
+a {
+  color: var(--dimex-green) !important;
+}
+
+/* code blocks — terminal feel */
+code {
+  background: var(--dimex-grey) !important;
+  color: var(--dimex-green) !important;
+  border: 1px solid var(--dimex-green-dim);
+}
+
+/* nav active item */
+.md-nav__link--active {
+  color: var(--dimex-green) !important;
+  font-weight: bold;
+}
+
+/* admonition warning → DIMEX style */
+.admonition.warning {
+  border-color: var(--dimex-green);
+}
