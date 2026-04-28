@@ -62,14 +62,14 @@ nav:
     - Voice: brand/voice.md
     - Colors: brand/colors.md
     - Naming: brand/naming.md
-  - Architecture:
-    - architecture/index.md
-    - Overview: architecture/overview.md
-    - API Structure: architecture/api_structure.md
-    - Database: architecture/database.md
-    - Engine: architecture/engine.md
-    - Brokers: architecture/brokers.md
-    - Deployment: architecture/deployment.md
+  - Get Started:
+    - startup/index.md
+    - Local Setup: startup/local_setup.md
+    - API Setup: startup/api_setup.md
+    - Web Interface: startup/web_setup.md
+    - Onboarding: startup/onboarding.md
+    - Tiers + Pricing: startup/tiers.md
+    - Intro to API: startup/intro.md
   - Security:
     - security/index.md
     - Overview: security/overview.md
@@ -89,6 +89,16 @@ nav:
     - Portfolio: trader/portfolio.md
     - Alerts: trader/alerts.md
     - Paper Trading: trader/paper_trading.md
+  - Developer Guide:
+    - developer/index.md
+    - Quickstart: developer/quickstart.md
+    - Authentication: developer/authentication.md
+    - WebSockets: developer/websockets.md
+    - Building a Bot: developer/building_a_bot.md
+    - Building a Dashboard: developer/building_a_dashboard.md
+    - Rate Limits: developer/rate_limits.md
+    - Error Handling: developer/error_handling.md
+    - SDK: developer/sdk.md
   - API Reference:
     - api/index.md
     - Overview: api/overview.md
@@ -100,16 +110,6 @@ nav:
     - Stats: api/stats.md
     - Alerts: api/alerts.md
     - Keys: api/keys.md
-  - Developer Guide:
-    - developer/index.md
-    - Quickstart: developer/quickstart.md
-    - Authentication: developer/authentication.md
-    - WebSockets: developer/websockets.md
-    - Building a Bot: developer/building_a_bot.md
-    - Building a Dashboard: developer/building_a_dashboard.md
-    - Rate Limits: developer/rate_limits.md
-    - Error Handling: developer/error_handling.md
-    - SDK: developer/sdk.md
   - Changelog:
     - changelog/index.md
     - v0.1.0: changelog/v0.1.0.md
